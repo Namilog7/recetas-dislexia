@@ -35,3 +35,12 @@ SessionLocal = sessionmaker(
 
 class Base(DeclarativeBase):
     pass
+
+
+
+print(
+    "DATABASE DRIVER:",
+    settings.database_url.split("://")[0]
+)
+
+engine = create_engine(settings.database_url)    

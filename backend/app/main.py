@@ -13,6 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+        "https://recetas-dislexia.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],

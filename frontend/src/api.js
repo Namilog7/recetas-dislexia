@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8000";
+/* const API_URL = "http://localhost:8000"; */
+const API_URL = "https://recetas-backend-5f80.onrender.com";
 const TOKEN_KEY = "recetas_token";
 
 export function getToken() {

@@ -1,11 +1,47 @@
+/* Tema Claro (por defecto, con el fondo cálido que pide el diseño) */
+:root {
+  --fondo: #fdf6e3; 
+  --texto: #333333;
+  --primario: #ff7f50;
+  --borde: #cccccc;
+}
+
+/* Tema Oscuro */
+[data-theme="oscuro"] {
+  --fondo: #1e1e1e;
+  --texto: #f5f5f5;
+  --primario: #ff9f70;
+  --borde: #555555;
+}
+
+/* Tema Alto Contraste (Especial para la profe) */
+[data-theme="alto-contraste"] {
+  --fondo: #000000;
+  --texto: #ffff00; /* Amarillo flúor sobre negro, contraste a full */
+  --primario: #00ff00;
+  --borde: #ffff00;
+}
+
+/* Aplicamos la magia a la app entera */
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  transition: all 0.3s ease; /* Para que el cambio de color sea suavecito */
+}
+
+/* Ejemplo para que los botones también sigan la onda del tema */
+button {
+  background-color: var(--primario);
+  color: #111;
+  border: 2px solid var(--borde);
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
 }
 
 :root {
   font-family: Arial, Helvetica, sans-serif;
-  color: #252525;
-  background: #f7f5f0;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }

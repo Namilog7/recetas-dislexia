@@ -42,7 +42,7 @@ class RecipeProcessor:
         """
 
         interaction = client.interactions.create(
-            model="gemini-3.6-flash",
+            model="gemini-3.8-flash",
             input=prompt,
             response_format={
                 "type": "text",
